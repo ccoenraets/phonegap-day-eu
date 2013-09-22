@@ -1,0 +1,9 @@
+<ul class="topcoat-list product-list">
+{{#.}}
+<li class="topcoat-list__item">
+    <a href="#products/{{this.id}}">
+    <img src="../assets/img/{{this.smallPic}}" />
+    <p>{{this.name}}</p><p>{{this.category}}</p><p>{{this.price}}</p><span class="chevron"></span></a>
+</li>
+{{/.}}
+</ul>

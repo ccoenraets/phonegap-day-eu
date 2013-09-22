@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link href="../assets/topcoat/css/topcoat-mobile-light.min.css" rel="stylesheet">
+    <link href="../assets/css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+<script id="home-tpl" type="text/x-handlebars-template">
+    <div class="topcoat-navigation-bar">
+        <div class="topcoat-navigation-bar__item center full">
+            <h1 class="topcoat-navigation-bar__title">Geometrixx</h1>
+        </div>
+    </div>
+
+    <div class="search-bar">
+        <input type="search" placeholder="search" class="topcoat-search-input search-key">
+    </div>
+
+    <div class="topcoat-list__container scroller" style="top:138px;">
+        <ul class='topcoat-list list product-list '></ul>
+    </div>
+</script>
+
+<script id="product-li-tpl" type="text/x-handlebars-template">
+    {{#.}}
+    <li class="topcoat-list__item">
+        <a href="#products/{{this.id}}">
+        <img src="../assets/img/{{this.smallPic}}" />
+        <p>{{this.name}}</p><p>{{this.category}}</p><p>{{this.price}}</p><span class="chevron"></span></a>
+    </li>
+    {{/.}}
+</script>
+
+<script id="product-tpl" type="text/x-handlebars-template">
+    <div class="topcoat-navigation-bar">
+        <div class="topcoat-navigation-bar__item left quarter">
+            <a class="topcoat-icon-button--quiet back-button" href="#">
+                <span class="topcoat-icon topcoat-icon--back"></span>
+            </a>
+        </div>
+        <div class="topcoat-navigation-bar__item center half">
+            <h1 class="topcoat-navigation-bar__title">Geometrixx</h1>
+        </div>
+    </div>
+
+    <div class="page-body scroller">
+        <img class="small-pic" src="../assets/img/{{this.smallPic}}"/>
+        <h1 class="product-name">{{this.name}}</h1>
+        <h2 class="category">{{this.category}}</h2>
+
+        <img src="../assets/css/images/star{{this.rating}}.png"/>
+
+        <h2 class="price">{{this.price}}</h2>
+
+        <a class="topcoat-icon-button topcoat-button--cta">
+        <span class="topcoat-icon icon-facebook"></span>
+        </a>
+
+        <a class="topcoat-icon-button topcoat-button--cta">
+        <span class="topcoat-icon icon-twitter"></span>
+        </a>
+
+        <h3>Features:</h3>
+        <ul class='feature-list topcoat-list'>
+            {{#features}}
+            <li class="topcoat-list__item">{{this}}</li>
+            {{/features}}
+        </ul>
+
+        <div class="large-pic-bg"></div>
+        <div class="large-pic" style="background: url('../assets/img/{{this.largePic}}') center center no-repeat;background-size: contain;"></div>
+
+    </div>
+</script>
+
+<script src="../lib/jquery.js"></script>
+<script src="../lib/handlebars.js"></script>
+<script src="js/app.js"></script>
+<script src="js/adapters/product-memory.js"></script>
+
+</body>
+</html>

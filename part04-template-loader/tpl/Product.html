@@ -1,0 +1,39 @@
+<div class="topcoat-navigation-bar">
+    <div class="topcoat-navigation-bar__item left quarter">
+        <a class="topcoat-icon-button--quiet back-button" href="#">
+            <span class="topcoat-icon topcoat-icon--back"></span>
+        </a>
+    </div>
+    <div class="topcoat-navigation-bar__item center half">
+        <h1 class="topcoat-navigation-bar__title">Geometrixx</h1>
+    </div>
+</div>
+
+<div class="page-body scroller">
+    <img class="small-pic" src="../assets/img/{{this.smallPic}}"/>
+    <h1 class="product-name">{{this.name}}</h1>
+    <h2 class="category">{{this.category}}</h2>
+
+    <img src="../assets/css/images/star{{this.rating}}.png"/>
+
+    <h2 class="price">{{this.price}}</h2>
+
+    <a class="topcoat-icon-button topcoat-button--cta">
+    <span class="topcoat-icon icon-facebook"></span>
+    </a>
+
+    <a class="topcoat-icon-button topcoat-button--cta">
+    <span class="topcoat-icon icon-twitter"></span>
+    </a>
+
+    <h3>Features:</h3>
+    <ul class='feature-list topcoat-list'>
+        {{#features}}
+        <li class="topcoat-list__item">{{this}}</li>
+        {{/features}}
+    </ul>
+
+    <div class="large-pic-bg"></div>
+    <div class="large-pic" style="background: url('../assets/img/{{this.largePic}}') center center no-repeat;background-size: contain;"></div>
+
+</div>

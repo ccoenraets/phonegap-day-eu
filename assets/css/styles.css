@@ -1,0 +1,211 @@
+a {
+    text-decoration: none;
+    color: inherit;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.search-bar {
+    padding:8px 14px 12px 8px;
+}
+
+.search-key {
+    width: 100%;
+}
+
+.topcoat-list li p:nth-of-type(2) {
+    color:  #58C0FF ;
+}
+
+.small-pic {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.large-pic-bg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: none;
+    background: rgba(0,0,0,.8);
+}
+
+.large-pic {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background-size: contain;
+    display: none;
+}
+
+.page-body {
+    padding: 14px 10px;
+}
+
+.page-body h1 {
+    margin: 0px;
+    font: inherit;
+    color: inherit;
+    background: transparent;
+    border: none;
+    overflow: hidden;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.page-body h2 {
+    margin: 0px;
+    font: inherit;
+    color: inherit;
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+.page-body h3 {
+    margin: 0px;
+}
+
+.action-button {
+    display: block;
+    margin: 4px 0px;
+    text-align: center;
+}
+
+.scroller {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    position: absolute;
+    top: 70px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.hscroller {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    position: absolute;
+    top: 80px;
+    height: 200px;
+    left: 10px;
+    right: 10px;
+    white-space: nowrap;
+}
+
+.topcoat-icon--back {
+    background: url("images/back_light.svg") no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.topcoat-list__container {
+    border-bottom: none;
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.topcoat-list {
+    list-style: none;
+}
+
+.product-list li {
+    position: relative;
+    text-align: left;
+    clear: both;
+    padding: 8px 60px 8px 8px !important;
+    height: 60px;
+}
+
+.product-list > li p:nth-of-type(1) {
+    margin: 0px;
+    /*padding-top: 4px;*/
+    /*font-weight: bold;*/
+}
+
+.product-list > li p:nth-of-type(2) {
+    margin: 0px;
+    color: #58C0FF;
+}
+
+.product-list > li p:nth-of-type(3) {
+    margin: 0px;
+}
+
+.product-list > li img {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-top: 0px;
+    margin-right: 8px;
+}
+
+.product-list li:active {
+    background-color: #d3d7d7;;
+}
+
+ul {
+    clear:both;
+    border-top: none !important;
+}
+
+.icon-facebook {
+    background: transparent url(images/facebook.svg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.icon-twitter {
+    background: transparent url(images/twitter.svg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.chevron {
+    background: transparent url(images/next_blue.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 12px;
+    top: 22px;
+    height: 50px;
+    width: 28px;
+}
+
+#map {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+h3 {
+    clear: both;
+    padding-top: 12px;
+}
+
+.price {
+    color: green !important;
+    padding-bottom: 14px;
+}
